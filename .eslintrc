@@ -1,0 +1,16 @@
+{
+  "extends": "standard-with-typescript",
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "env": {
+    "es6": true,
+    "commonjs": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "max-len": ["error", 120]
+  }
+}
