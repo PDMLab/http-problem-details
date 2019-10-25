@@ -67,6 +67,16 @@ describe('When creating a Problem Document with detail member', (): void => {
   })
 })
 
+describe('When creating a Problem Document with empty string detail', (): void => {
+  it('should not contain detail member', (done): void => {
+    const doc = new ProblemDocument({ detail: '' })
+
+    doc.should.not.have.property('detail')
+
+    return done()
+  })
+})
+
 describe('When creating a Problem Document with instance member', (): void => {
   it('should contain instance member', (done): void => {
     const instance = '/account/12345/msgs/abc'
