@@ -37,7 +37,9 @@ export class ProblemDocument {
     // const result = {
     this.type = type
     this.title = title
-    this.detail = detail
+    if (detail) {
+      this.detail = detail
+    }
     this.instance = instance
     this.status = status
     // };
