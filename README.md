@@ -1,3 +1,5 @@
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+
 # HTTP Problem Details (RFC 7807) for Node.js
 
 This library implements HTTP Problem details (RFC 7807) for HTTP APIs.
@@ -105,6 +107,8 @@ If you want to contribute - we'd love it! Just open an issue to work against so 
 If you see a bug, please be so kind as to show how it's failing, and we'll do our best to get it fixed quickly.
 
 Before sending a PR, please [create an issue](https://github.com/PDMLab/http-problem-details/issues/new) to introduce your idea and have a reference for your PR.
+
+We're using [conventional commits](https://www.conventionalcommits.org), so please use it for your commits as well.
 
 Also please add tests and make sure to run `npm run lint-ts`.
 
