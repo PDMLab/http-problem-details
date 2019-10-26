@@ -17,7 +17,7 @@
     "lint-ts": "./node_modules/.bin/eslint --ext .ts .",
     "test": "./node_modules/mocha/bin/mocha -r ts-node/register test/*.ts",
     "test-ci": "./node_modules/mocha/bin/mocha -r ts-node/register test/*.ts  --reporter mocha-junit-reporter",
-    "release": "standard-version"
+    "release": "yarn build && yarn test && standard-version"
   },
   "repository": {
     "type": "git",
