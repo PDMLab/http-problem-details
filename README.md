@@ -87,7 +87,7 @@ const doc = new ProblemDocument({
 ```
 
 ## Using http-problem-details with express
-Usage of `http-problem-details` is described in `express-http-problem-details` ( [repository](https://github.com/PDMLab/express-http-problem-details) | [npm](https://www.npmjs.com/package/docker-compose)).
+Usage of `http-problem-details` is described in `express-http-problem-details` ( [repository](https://github.com/PDMLab/express-http-problem-details) | [npm](https://www.npmjs.com/package/express-http-problem-details)).
 
 ## Running the tests
 
