@@ -1,4 +1,4 @@
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![Join the chat at https://gitter.im/pdmlab/http-problem-details](https://badges.gitter.im/pdmlab/http-problem-details.svg)](https://gitter.im/pdmlab/http-problem-details?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # HTTP Problem Details (RFC 7807) for Node.js
 
