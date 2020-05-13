@@ -8,7 +8,7 @@ export class ProblemDocument {
   public title: string
   public type?: string
 
-  public constructor (options: ProblemDocumentOptions, extension?: ProblemDocumentExtension) {
+  public constructor (options: ProblemDocumentOptions, extension?: ProblemDocumentExtension | Record<string, any>) {
     const detail = options.detail
     const instance = options.instance
     let type = options.type
@@ -43,9 +43,13 @@ export class ProblemDocument {
     // };
 
     if (extension) {
-      for (const propertyName in extension.extensionProperties) {
-        if (extension.extensionProperties.hasOwnProperty(propertyName)) {
-          this[propertyName] = extension.extensionProperties[propertyName]
+      const extensionProperties = extension instanceof ProblemDocumentExtension
+        ? extension.extensionProperties
+        : extension
+
+      for (const propertyName in extensionProperties) {
+        if (extensionProperties.hasOwnProperty(propertyName)) {
+          this[propertyName] = extensionProperties[propertyName]
         }
       }
     }
@@ -61,9 +65,9 @@ export class ProblemDocumentOptions {
 }
 
 export class ProblemDocumentExtension {
-  public extensionProperties: any;
+  public extensionProperties: Record<string, any>;
 
-  public constructor (extensionProperties: any) {
+  public constructor (extensionProperties: Record<string, any>) {
     this.extensionProperties = extensionProperties
   }
 }
