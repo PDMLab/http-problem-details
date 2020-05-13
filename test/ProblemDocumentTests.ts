@@ -43,6 +43,19 @@ describe('When creating a Problem Document with an Extension', (): void => {
 
     return done()
   })
+
+  it('should contain extension added as plain object', (done): void => {
+    const type = 'http://tempuri.org/my-problem'
+    const title = `something went wrong`
+    const extensionName = 'invalid-params'
+    const extensionValue = 'test'
+    const extension = { 'invalid-params': extensionValue }
+    const doc = new ProblemDocument({ type, title }, extension)
+
+    doc[extensionName].should.equal(extensionValue)
+
+    return done()
+  })
 })
 
 describe('When creating a Problem Document with status member', (): void => {
