@@ -8,7 +8,7 @@ export class ProblemDocument {
   public title: string
   public type?: string
 
-  public constructor (options: ProblemDocumentOptions, extension?: ProblemDocumentExtension | Record<string, any>) {
+  public constructor (options: ProblemDocumentOptions, extension?: ProblemDocumentExtension | Record<string, Object>) {
     const detail = options.detail
     const instance = options.instance
     let type = options.type
@@ -67,9 +67,9 @@ export class ProblemDocumentOptions {
 }
 
 export class ProblemDocumentExtension {
-  public extensionProperties: Record<string, any>;
+  public extensionProperties: Record<string, Object>;
 
-  public constructor (extensionProperties: Record<string, any>) {
+  public constructor (extensionProperties: Record<string, Object>) {
     this.extensionProperties = extensionProperties
   }
 }
