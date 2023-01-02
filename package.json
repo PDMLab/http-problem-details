@@ -51,7 +51,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.2",
     "husky": "^4.3.0",
-    "mocha": "8.2.0",
+    "mocha": "10.2.0",
     "mocha-junit-reporter": "^2.0.0",
     "should": "^13.2.3",
     "standard-version": "^9.0.0",
