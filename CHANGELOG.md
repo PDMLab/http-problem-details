@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/PDMLab/http-problem-details/compare/v0.1.5...v0.1.6) (2025-01-23)
+
+
+### Bug Fixes
+
+* added ability to provide `null` as a value to ProblemDocumentExtension ([301af4c](https://github.com/PDMLab/http-problem-details/commit/301af4c2202196b2d91005e45040693b561212ea))
+
 ### [0.1.5](https://github.com/PDMLab/http-problem-details/compare/v0.1.4...v0.1.5) (2020-05-25)
 
 
