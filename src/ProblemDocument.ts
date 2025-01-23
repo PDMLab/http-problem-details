@@ -67,9 +67,9 @@ export class ProblemDocumentOptions {
 }
 
 export class ProblemDocumentExtension {
-  public extensionProperties: Record<string, Object>;
+  public extensionProperties: Record<string, Object | null>
 
-  public constructor (extensionProperties: Record<string, Object>) {
+  public constructor (extensionProperties: Record<string, Object | null>) {
     this.extensionProperties = extensionProperties
   }
 }
