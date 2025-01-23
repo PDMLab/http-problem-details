@@ -44,6 +44,21 @@ describe('When creating a Problem Document with an Extension', (): void => {
     return done()
   })
 
+  it('should allow NULL in the extension value', (done): void => {
+    const type = 'http://tempuri.org/my-problem'
+    const title = `something went wrong`
+    const extensionName = 'has-null'
+    const extensionValue = null
+    const extension = new ProblemDocumentExtension({ [extensionName]: extensionValue })
+    const doc = new ProblemDocument({ type, title }, extension)
+
+    // Note: chaining `should` off a NULL value doesn't work and wrapping
+    // it the value to asset in `should` (as a function) also doesn't work
+    ;(doc[extensionName] === null).should.be.true;
+
+    return done()
+  })
+
   it('should contain extension added as plain object', (done): void => {
     const type = 'http://tempuri.org/my-problem'
     const title = `something went wrong`
